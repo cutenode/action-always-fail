@@ -5,12 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "standard index.js",
-    "package": "ncc build index.js -o dist",
-    "test": "standard index.js && jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/actions/javascript-action.git"
+    "package": "ncc build index.js -o dist"
   },
   "keywords": [
     "GitHub",
@@ -29,8 +24,11 @@
   },
   "devDependencies": {
     "@zeit/ncc": "^0.20.5",
-    "jest": "^25.1.0",
     "standard": "^14.3.1"
   },
-  "author": "Tierney Cyren <hello@bnb.im>"
+  "author": "Tierney Cyren <hello@bnb.im>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cutenode/action-always-fail.git"
+  }
 }

@@ -1,12 +1,12 @@
 {
-  "name": "javascript-action",
+  "name": "action-always-fail",
   "version": "1.0.0",
-  "description": "JavaScript Action Template",
+  "description": "A GitHub Action that will always fail",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint index.js",
+    "lint": "standard index.js",
     "package": "ncc build index.js -o dist",
-    "test": "eslint index.js && jest"
+    "test": "standard index.js && jest"
   },
   "repository": {
     "type": "git",
@@ -15,9 +15,10 @@
   "keywords": [
     "GitHub",
     "Actions",
-    "JavaScript"
+    "JavaScript",
+    "failure",
+    "always"
   ],
-  "author": "GitHub",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/actions/javascript-action/issues"
@@ -28,7 +29,8 @@
   },
   "devDependencies": {
     "@zeit/ncc": "^0.20.5",
-    "eslint": "^6.3.0",
-    "jest": "^24.9.0"
-  }
+    "jest": "^25.1.0",
+    "standard": "^14.3.1"
+  },
+  "author": "Tierney Cyren <hello@bnb.im>"
 }

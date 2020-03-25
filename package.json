@@ -4,8 +4,7 @@
   "description": "A GitHub Action that will always fail",
   "main": "index.js",
   "scripts": {
-    "lint": "standard index.js",
-    "package": "ncc build index.js -o dist"
+    "lint": "standard index.js"
   },
   "keywords": [
     "GitHub",

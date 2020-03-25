@@ -3,3 +3,6 @@ description: 'An action that will always fail'
 runs:
   using: 'node12'
   main: 'dist/index.js'
+branding:
+  icon: 'alert-triangle'
+  color: 'red'
